@@ -97,21 +97,21 @@ def sendButton(event):  #按鈕樣版
         message = TemplateSendMessage(
             alt_text='按鈕樣板',
             template=ButtonsTemplate(
-                thumbnail_image_url='https://i.imgur.com/4QfKuz1.png',  #顯示的圖片
-                title='按鈕樣版示範',  #主標題
-                text='請選擇：',  #副標題
+                thumbnail_image_url='https://lh3.googleusercontent.com/proxy/c73m6FhDozolWO09Ad1kH7g_RN4ui7Hrmp9oC8YEj9V7s2vFnPKW30pVJEtpdSdYIBRtjXeuGycDyOYHe0vRo3oWFmC2Os-WaobDV7uLMUX3E7UEf-Y',  #顯示的圖片
+                title='demo',  #主標題
+                text='皮卡套餐：',  #副標題
                 actions=[
                     MessageTemplateAction(  #顯示文字計息
                         label='文字訊息',
-                        text='@購買披薩'
+                        text='@皮卡中心'
                     ),
                     URITemplateAction(  #開啟網頁
-                        label='連結網頁',
-                        uri='http://www.e-happy.com.tw'
+                        label='皮卡網址',
+                        uri='https=//tw.portal-pokemon.com/'
                     ),
                     PostbackTemplateAction(  #執行Postback功能,觸發Postback事件
                         label='回傳訊息',  #按鈕文字
-                        #text='@購買披薩',  #顯示文字計息
+                        #text='@皮卡中心',  #顯示文字計息
                         data='action=buy'  #Postback資料
                     ),
                 ]
