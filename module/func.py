@@ -107,7 +107,7 @@ def sendButton(event):  #按鈕樣版
                     ),
                     URITemplateAction(  #開啟網頁
                         label='皮卡網址',
-                        uri='https=//tw.portal-pokemon.com/'
+                        uri='https://tw.portal-pokemon.com/'
                     ),
                     PostbackTemplateAction(  #執行Postback功能,觸發Postback事件
                         label='回傳訊息',  #按鈕文字
